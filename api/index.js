@@ -1,6 +1,7 @@
 const express = require('express')
 const morgan = require('morgan')
 
+require('./database')
 const app = express()
 
 app.use(morgan('dev'))
