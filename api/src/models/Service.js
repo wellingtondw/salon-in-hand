@@ -4,7 +4,8 @@ const Schema = mongoose.Schema
 const serviceSchema = new Schema({
   salonId: {
     type: mongoose.Types.ObjectId,
-    ref: 'Salon'
+    ref: 'Salon',
+    required: true
   },
   title: {
     type: String,
@@ -14,7 +15,7 @@ const serviceSchema = new Schema({
     type: Number,
     required: true
   },
-  comission: { //% of comission about price
+  commission: { //% of commission about price
     type: Number,
     required: true
   },
